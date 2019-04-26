@@ -9,9 +9,10 @@
     width: 610px;
     background: #DEDEDE;
     box-shadow: none;
-    position: relative;
+    position: absolute;
     border-radius: 0;
-    float: right;
+    right: 0;
+    bottom: 0;
 }
 
 .owl-scrollbar .owl-scroll-progress {

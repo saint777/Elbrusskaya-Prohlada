@@ -27,7 +27,8 @@
     </header>
     <main>
       <div class="slider container">
-        <div class="owl-carousel owl-theme clearfix">
+        <div class="slider-counter"></div>
+        <div class="owl-carousel owl-theme">
           <div class="slide" style="background-image: url(./images/napitki1.jpg);">
             <h2>Безалкогольные напитки &laquo;Премиум&raquo; качества</h2>
           </div>
@@ -42,18 +43,49 @@
           </div>
         </div>
       </div>
+      <section class="about-us container">
+        <section class="block-1">
+          <h1>Немного о нас</h1>
+          <p>ООО "Эльбрусская прохлада"- отптовые продажи безалкогольных напитков от производителя.Широкий ассортимент лимонадов,минеральной воды,разных сементов.Артезианская питьевая вода,добывается из скважины глубиной 230 м. Автоматизированная система розлива исключает любые загрязнения в процессе производства, а отсутствие поблизости крупных предприятий и сельхозугодий гарантирует чистоту добываемой воды. </p>
+        </section>
+        <div class="slider2">
+          <div class="customControls">
+            <div class="owl-nav"></div>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="slide">
+              Индивидуальные скидки в зависимости от объема покупки
+            </div>
+            <div class="slide">
+              Индивидуальные скидки в зависимости от объема покупки
+            </div>
+            <div class="slide">
+              Индивидуальные скидки в зависимости от объема покупки
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script type="text/javascript" src="./js/jquery-3.4.0.js"></script>
     <script type="text/javascript" src="./js/owlcarousel/owl.carousel.js"></script>
-    <script type="text/javascript" src="./js/Scrollbar.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
+        $('.slider .owl-carousel').owlCarousel({
           items: 1,
           loop: 1,
-          scrollbarType: "progress",
           dots: true,
-          startPosition: 1
+          startPosition: 1,
+          autoplay: true,
+  		    autoplayTimeout: 8000,
+        });
+
+        $('.slider2 .owl-carousel').owlCarousel({
+          items: 2,
+          loop: 0,
+          margin: 36,
+          dots: false,
+          nav: true,
+          navContainer: ".slider2 .customControls .owl-nav"
         });
       });
     </script>

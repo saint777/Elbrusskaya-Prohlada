@@ -68,7 +68,7 @@ a:link:hover{
   padding-left: 80px;
   padding-right: 80px;
   margin: 0 auto;
-  outline: 1px solid #000;
+  outline: 1px solid rgba(0,0,0,0.3);
 }
 
 header{
@@ -133,6 +133,9 @@ a:link.phone{
 
 .slider{
   position: relative;
+  box-shadow: 0px 15px 40px rgba(25, 70, 186, 0.1);
+  padding-bottom: 56px;
+  padding-top: 56px;
 }
 
 .slider .slide{
@@ -146,8 +149,7 @@ a:link.phone{
   font-size: 36px;
   line-height: 49px;
   width: 540px;
-  position: absolute;
-  top: 103px;
+  margin-top: 153px;
 }
 
 .slider .slide{
@@ -160,34 +162,14 @@ a:link.phone{
   background-size: contain;
 }
 
-
-.controls{
+.slider-counter{
   position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.controls .indicator{
-
-}
-
-.controls .horizontal{
-  position: relative;
-  right: 0;
-  bottom: 0;
-  width: 400px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-.controls .vertical{
-  position: relative;
-  right: 0;
-  top: 0;
-}
-
-.controls .vertical input{
-  display: block;
+  left: 50%;
+  top: 10%;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8C8C8C;
 }
 
 .link-btn{
@@ -211,6 +193,64 @@ a:link.phone{
   content: "";
   display: table;
   clear: both;
+}
+
+.about-us{
+  padding-top: 159px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-us p{
+  font-size: 14px;
+  line-height: 25px;
+  color: #2A2A2A;
+}
+
+.block-1 p{
+  margin-top: 109px;
+}
+
+.block-1 h1{
+  font-size: 72px;
+  color: #1946BA;
+}
+
+.block-1{
+  width: 540px;
+  margin-right: 50px;
+}
+
+.slider2{
+  width: 587px;
+}
+
+.slider2 .slide{
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(25, 70, 186, 0.2);
+  width: auto;
+  height: 265px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #2A2A2A;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.slider2 .slide:before{
+  content: "";
+  display: block;
+  width: 86px;
+  height: 86px;
+  margin-bottom: 30px;
+  background-image: url("./icons/discount.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .owl-theme .owl-dots .owl-dot span, .owl-theme .owl-dots .owl-dot span{
@@ -245,4 +285,55 @@ a:link.phone{
 
 .owl-theme .owl-dots .owl-dot span{
   margin: 0;
+}
+
+/* Scrollbar */
+.scrollbar {
+	margin: 1em 0 0 0;
+	height: 4px;
+	background: #ccc;
+	line-height: 0;
+}
+.scrollbar .handle {
+	width: 610px;
+	height: 100%;
+	background: #292a33;
+	cursor: pointer;
+}
+
+.slider2 .owl-carousel .owl-stage-outer{
+  padding: 20px;
+  margin-right: -143px;
+}
+
+.slider2 .customControls .owl-nav button:hover{
+  opacity: 0.5;
+}
+
+.slider2 .customControls .owl-nav button span{
+  display: none;
+}
+
+.slider2 .customControls .owl-nav button.owl-next{
+  background: url("./icons/arrow-next.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 22px;
+}
+
+.slider2 .customControls .owl-nav button.owl-prev{
+  margin-right: 20px;
+  background: url("./icons/arrow-prev.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 22px;
+}
+
+.slider2 .customControls .owl-nav button{
+  border: 2px solid #1946BA;
+  border-radius: 50%;
+  font-size: 50px;
+  width: 43px;
+  height: 43px;
+  padding: 10px;
 }
