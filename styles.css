@@ -170,6 +170,7 @@ a:link.phone{
   font-size: 18px;
   font-weight: 600;
   color: #8C8C8C;
+  text-align: center;
 }
 
 .link-btn{
@@ -219,17 +220,17 @@ a:link.phone{
 
 .block-1{
   width: 540px;
-  margin-right: 50px;
+  margin-right: 45px;
 }
 
 .slider2{
-  width: 587px;
+  width: 655px;
 }
 
 .slider2 .slide{
   background: #FFFFFF;
   box-shadow: 0px 5px 20px rgba(25, 70, 186, 0.2);
-  width: auto;
+  width: 295px;
   height: 265px;
   font-size: 18px;
   font-weight: 600;
@@ -287,23 +288,11 @@ a:link.phone{
   margin: 0;
 }
 
-/* Scrollbar */
-.scrollbar {
-	margin: 1em 0 0 0;
-	height: 4px;
-	background: #ccc;
-	line-height: 0;
-}
-.scrollbar .handle {
-	width: 610px;
-	height: 100%;
-	background: #292a33;
-	cursor: pointer;
-}
+/* Block 2 Slider */
 
 .slider2 .owl-carousel .owl-stage-outer{
   padding: 20px;
-  margin-right: -143px;
+  margin-right: -79px;
 }
 
 .slider2 .customControls .owl-nav button:hover{
@@ -336,4 +325,51 @@ a:link.phone{
   width: 43px;
   height: 43px;
   padding: 10px;
+}
+
+.slider2 .owl-carousel .owl-stage-outer:after{
+  display: block;
+  content: "";
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.85) 100%);
+  width: 420px;
+  height: 310px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.slider2 .customControls{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.slider2 .customControls .counter{
+  font-family: Geometria;
+  font-size: 15px;
+  color: #8C8C8C;
+  text-align: center;
+  display: inline-block;
+  width: 25px;
+}
+
+.slider2 .customControls .indicator .fill{
+  width: 0;
+  background-color: #1946BA;
+  height: 4px;
+  display: block;
+}
+
+.slider2 .customControls .owl-nav{
+  display: inline-block;
+}
+
+.slider2 .customControls .indicator{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  height: 4px;
+  width: 484px;
+  background-color: #DEDEDE;
 }
