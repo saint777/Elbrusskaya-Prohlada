@@ -13,8 +13,8 @@ function resetProgressBar(elem) {
 }
 
 $(document).ready(function(){
-    var slider2Delay;
-    slider2Delay = $(".slider2").data("delay");
+    var sliderDelay = $(".slider").data("delay");
+    var slider2Delay = $(".slider2").data("delay");
 
     $('.slider .owl-carousel').on('initialized.owl.carousel changed.owl.carousel', function(e) {
         if (!e.namespace)  {
@@ -28,7 +28,16 @@ $(document).ready(function(){
         dots: true,
         startPosition: 1,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: sliderDelay,
+        onInitialized: function(){
+          startProgressBar(".slider .indicator .fill", sliderDelay)
+        },
+        onTranslate: function(){
+          resetProgressBar(".slider .indicator .fill")
+        },
+        onTranslated: function(){
+          startProgressBar(".slider .indicator .fill", sliderDelay)
+        }
       });
 
       $('.slider2 .owl-carousel').on('initialized.owl.carousel changed.owl.carousel', function(e) {
