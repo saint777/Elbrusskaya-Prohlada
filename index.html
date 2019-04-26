@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./js/owlcarousel/owl.carousel.css">
     <link rel="stylesheet" href="./js/owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="./owl-scrollbar.css">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -25,24 +26,34 @@
       </ul>
     </header>
     <main>
-      <div class="slider owl-carousel container">
-        <div class="slide" style="background-image: url(./images/tarhun.jpg);">
-          <h2>Оптовые поставки минеральной воды и безалкогольных напитков</h2>
-        </div>
-        <div class="slide" style="background-image: url(./images/napitki1.jpg);">
-          <h2>Безалкогольные напитки &laquo;Премиум&raquo; качества</h2>
-        </div>
-        <div class="slide" style="background-image: url(./images/napitki2.jpg);">
-          <h2>Безалкогольные напитки серии &laquo;Лайт&raquo;</h2>
+      <div class="slider container">
+        <div class="owl-carousel owl-theme clearfix">
+          <div class="slide" style="background-image: url(./images/napitki1.jpg);">
+            <h2>Безалкогольные напитки &laquo;Премиум&raquo; качества</h2>
+          </div>
+          <div class="slide" style="background-image: url(./images/tarhun.jpg);">
+            <h2>Оптовые поставки минеральной воды и безалкогольных напитков</h2>
+          </div>
+          <div class="slide" style="background-image: url(./images/napitki2.jpg);">
+            <h2>Безалкогольные напитки серии &laquo;Лайт&raquo;</h2>
+          </div>
+          <div class="slide" style="background-image: url(./images/napitki2.jpg);">
+            <h2>Безалкогольные напитки серии &laquo;Лайт&raquo;</h2>
+          </div>
         </div>
       </div>
     </main>
     <script type="text/javascript" src="./js/jquery-3.4.0.js"></script>
     <script type="text/javascript" src="./js/owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="./js/Scrollbar.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
-          items: 1
+          items: 1,
+          loop: 1,
+          scrollbarType: "progress",
+          dots: true,
+          startPosition: 1
         });
       });
     </script>

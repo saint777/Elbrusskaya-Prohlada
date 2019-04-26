@@ -212,3 +212,37 @@ a:link.phone{
   display: table;
   clear: both;
 }
+
+.owl-theme .owl-dots .owl-dot span, .owl-theme .owl-dots .owl-dot span{
+  background-color: black;
+  opacity: 0.1;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span{
+  opacity: 0.5;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.owl-theme .owl-dots .owl-dot{
+  display: block;
+  margin-bottom: 45px;
+}
+
+.owl-theme{
+  position: relative;
+}
+
+.owl-theme .owl-dots{
+  position: absolute;
+  top: 160px;
+  right: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  margin: 0;
+}

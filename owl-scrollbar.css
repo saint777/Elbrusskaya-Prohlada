@@ -1,0 +1,23 @@
+.owl-container {
+    margin: 20px auto 0;
+}
+
+.owl-scrollbar {
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 4px;
+    width: 610px;
+    background: #DEDEDE;
+    box-shadow: none;
+    position: relative;
+    border-radius: 0;
+    float: right;
+}
+
+.owl-scrollbar .owl-scroll-progress {
+    background: #1946BA;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
