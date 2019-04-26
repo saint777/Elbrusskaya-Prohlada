@@ -1,23 +1,50 @@
 <!DOCTYPE>
 <html>
   <head>
+    <title>Эльбрусская Прохлада</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./js/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="./js/owlcarousel/owl.theme.default.css">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <header>
+    <header class="container clearfix">
       <span class="logo">Эльбрусская Прохлада</span>
       <ul class="main-links">
-        <li><a href="/">Главная</a></li>
+        <li class="active"><a href="/">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Как заказать</a></li>
         <li><a href="#">Отзывы</a></li>
         <li><a href="#">О нас</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+      <ul class="contacts">
+        <li><a href="tel:+79280761498" class="phone">+7 928 076 14 98</a></li>
+        <li><a href="#" class="link-btn">Заказать обратный звонок</a></li>
+      </ul>
     </header>
     <main>
-
+      <div class="slider owl-carousel container">
+        <div class="slide" style="background-image: url(./images/tarhun.jpg);">
+          <h2>Оптовые поставки минеральной воды и безалкогольных напитков</h2>
+        </div>
+        <div class="slide" style="background-image: url(./images/napitki1.jpg);">
+          <h2>Безалкогольные напитки &laquo;Премиум&raquo; качества</h2>
+        </div>
+        <div class="slide" style="background-image: url(./images/napitki2.jpg);">
+          <h2>Безалкогольные напитки серии &laquo;Лайт&raquo;</h2>
+        </div>
+      </div>
     </main>
+    <script type="text/javascript" src="./js/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="./js/owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          items: 1
+        });
+      });
+    </script>
   </body>
 </html>
