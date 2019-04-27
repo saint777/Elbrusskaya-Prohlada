@@ -9,6 +9,11 @@
   font-size: 14px;
 }
 
+h1{
+  font-size: 30px;
+  line-height: 41px;
+}
+
 /* Mobile Menu */
 
 .mobile-menu{
@@ -26,6 +31,7 @@
 .main-nav label{
   box-sizing: content-box;
   padding: 8px;
+  margin-right: -8px;
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -77,6 +83,16 @@
   color: #fff;
 }
 
+.menu-wrapper a:link:hover,
+.menu-wrapper a:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-wrapper a:link:active,
+.menu-wrapper a:active{
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .menu-wrapper .contacts .link-btn{
   color: #1946BA;
   background: #FFFFFF;
@@ -101,8 +117,143 @@
   overflow: hidden;
 }
 
+/* Slider #1*/
+.slider{
+  padding-top: 20px;
+}
+
+.slider .slider-counter{
+  left: 15px;
+  top: 40%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.slider .owl-theme .owl-dots .owl-dot span{
+  width: 10px;
+  height: 10px;
+}
+
+.slider .owl-theme .owl-dots .owl-dot{
+  margin-bottom: 30px;
+}
+
+.slider .owl-theme .owl-dots{
+  top: 30%;
+}
+
+.slider .indicator{
+  width: 100%;
+  float: none;
+}
+
+.slider .slide {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+.slider .slide h2{
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .about-us{
+  padding-top: 43px;
+}
+
+.block-1{
+  width: 100%;
+  margin-right: 0;
+}
+
+.block-1 p {
+  margin-top: 22px;
+  width: auto;
+}
+
+.slider2 {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.slider2 .customControls{
+  margin-bottom: 14px;
+}
+
+.slider2 .customControls .counter{
+  width: 15%;
+  padding-right: 15px;
+}
+
+.slider2 .customControls .indicator{
+  width: 42%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.slider2 .customControls .owl-nav{
+  width: 42%;
+  padding-left: 15px;
+}
+
+.slider2 .owl-carousel .owl-stage-outer{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.slider2 .owl-carousel .owl-stage-outer:after{
   display: none;
+}
+
+.slider2 .slide{
+  width: 290px;
+  box-shadow: 0px 5px 20px rgba(25, 70, 186, 0.2);
+}
+
+.get-price{
+  width: 100%;
+}
+
+.get-price section{
+  width: auto;
+  margin-left: -15px;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-position: 130% -50px;
+  background-size: 70%;
+}
+
+.get-price section h1{
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.get-price section p{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#form-get-price{
+  width: 100%;
+  padding: 0;
+  padding-top: 41px;
+  padding-bottom: 50px;
+}
+
+#form-get-price .link-btn{
+  margin-top: 18px;
+  width: 100%;
 }
 
 }

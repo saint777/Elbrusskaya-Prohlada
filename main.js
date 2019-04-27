@@ -47,9 +47,7 @@ $(document).ready(function(){
           var carousel2 = e.relatedTarget;
           $('.counter').text(carousel2.relative(carousel2.current()) + 1 + '/' + carousel2.items().length);
         }).owlCarousel({
-          items: 2,
           loop: 1,
-          margin: 20,
           dots: false,
           nav: true,
           autoplay: true,
@@ -63,6 +61,20 @@ $(document).ready(function(){
           },
           onTranslated: function(){
             startProgressBar(".slider2 .customControls .indicator .fill", slider2Delay)
+          },
+          responsive : {
+              0 : {
+                  items: 1,
+                  margin: 0
+              },
+              320 : {
+                  items: 1,
+                  margin: 18
+              },
+              1200 : {
+                  items: 2,
+                  margin: 20
+              },
           }
         });
 });
