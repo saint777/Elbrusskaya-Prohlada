@@ -2,4 +2,4 @@
 
 1) First block - header, slider with timer
 2) Second block - about us, discount slider with timer, price request form
-3) Adaptive design for mobile only (less or eq 320px)
+3) Adaptive design for mobile only (width <= 320px)
