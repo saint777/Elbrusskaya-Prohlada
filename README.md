@@ -1,4 +1,5 @@
 # Elbrusskaya-Prohlada
-Эльбрусская Прохлада
-1 and 2-nd block of website only.
-Adaptive incoming...
+
+1) First block - header, slider with timer
+2) Second block - about us, discount slider with timer, price request form
+3) Adaptive design for mobile only (less or eq 320px)
