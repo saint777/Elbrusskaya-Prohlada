@@ -1,38 +1,38 @@
 /* Open Sans */
 @font-face{
   font-family: "Open Sans";
-  src: url("./fonts/opensans.woff") format("woff"), url("./fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
   font-weight: 400;
 }
 
 @font-face{
   font-family: "Open Sans";
-  src: url("./fonts/opensanssemibold.woff") format("woff"), url("./fonts/opensanssemibold.woff2") format("woff2");
+  src: url("../fonts/opensanssemibold.woff") format("woff"), url("../fonts/opensanssemibold.woff2") format("woff2");
   font-weight: 600;
 }
 
 @font-face{
   font-family: "Open Sans";
-  src: url("./fonts/opensansbold.woff") format("woff"), url("./fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: 700;
 }
 
 /* Geometria */
 @font-face{
   font-family: "Geometria";
-  src: url("./fonts/Geometria.woff") format("woff"), url("./fonts/Geometria.woff2") format("woff2");
+  src: url("../fonts/Geometria.woff") format("woff"), url("../fonts/Geometria.woff2") format("woff2");
   font-weight: 400;
 }
 
 @font-face{
   font-family: "Geometria";
-  src: url("./fonts/Geometria-Medium.woff") format("woff"), url("./fonts/Geometria-Medium.woff2") format("woff2");
+  src: url("../fonts/Geometria-Medium.woff") format("woff"), url("../fonts/Geometria-Medium.woff2") format("woff2");
   font-weight: 500;
 }
 
 @font-face{
   font-family: "Geometria";
-  src: url("./fonts/Geometria-Bold.woff") format("woff"), url("./fonts/Geometria-Bold.woff2") format("woff2");
+  src: url("../fonts/Geometria-Bold.woff") format("woff"), url("../fonts/Geometria-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 
@@ -88,6 +88,7 @@ header{
   flex-wrap: wrap;
   vertical-align: middle;
   align-items: center;
+  margin-lefT: auto;
 }
 
 .logo{
@@ -99,6 +100,18 @@ header{
   font-size: 18px;
   font-weight: 700;
   vertical-align: middle;
+}
+
+.mobile-menu-btn{
+  
+}
+
+.main-nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-lefT: auto;
 }
 
 .main-links{
@@ -125,7 +138,6 @@ header{
   vertical-align: middle;
   list-style: none;
   font-size: 0;
-  margin-left: auto;
 }
 
 .contacts li{
@@ -277,7 +289,7 @@ a:link.phone{
   width: 86px;
   height: 86px;
   margin-bottom: 30px;
-  background-image: url("./icons/discount.svg");
+  background-image: url("../icons/discount.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -334,7 +346,7 @@ a:link.phone{
 }
 
 .slider2 .customControls .owl-nav button.owl-next{
-  background: url("./icons/arrow-next.svg");
+  background: url("../icons/arrow-next.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 22px;
@@ -342,7 +354,7 @@ a:link.phone{
 
 .slider2 .customControls .owl-nav button.owl-prev{
   margin-right: 20px;
-  background: url("./icons/arrow-prev.svg");
+  background: url("../icons/arrow-prev.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 22px;
@@ -413,7 +425,7 @@ a:link.phone{
   padding-right: 222px;
   padding-bottom: 105px;
   background-color: #1946BA;
-  background-image: url("icons/get-price.svg");
+  background-image: url("../icons/get-price.svg");
   background-repeat: no-repeat;
   background-position: 123% -800%;
   display: inline-block;
