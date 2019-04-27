@@ -220,6 +220,10 @@ a:link:hover.phone{
   float: right;
 }
 
+.contacts li a.link-btn{
+  color: white;
+}
+
 .link-btn{
   background: #1946BA;
   box-shadow: 0px 15px 30px rgba(25, 70, 186, 0.2);
