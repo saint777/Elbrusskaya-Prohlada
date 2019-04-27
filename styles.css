@@ -68,7 +68,7 @@ a:link:hover{
   padding-left: 80px;
   padding-right: 80px;
   margin: 0 auto;
-  /* outline: 1px solid rgba(0,0,0,0.3); */
+  outline: 1px solid rgba(0,0,0,0.3);
 }
 
 .shadow{
@@ -203,12 +203,15 @@ a:link.phone{
   padding-left: 15px;
   color: white;
   font-weight: 600;
+  outline: none;
+  border: 0;
 }
 
 .link-btn:hover,
 .link-btn:link:hover{
   color: white;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .clearfix:after{
@@ -222,7 +225,7 @@ a:link.phone{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 .about-us p{
@@ -250,6 +253,7 @@ a:link.phone{
 .slider2{
   width: 655px;
   padding-top: 24px;
+  margin-bottom: 150px;
 }
 
 .slider2 .slide{
@@ -285,7 +289,7 @@ a:link.phone{
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span{
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .owl-theme .owl-dots .owl-dot span{
@@ -399,4 +403,56 @@ a:link.phone{
   height: 4px;
   width: 484px;
   background-color: #DEDEDE;
+}
+
+.get-price section{
+  margin-left: -80px;
+  width: 690px;
+  padding-top: 97px;
+  padding-left: 80px;
+  padding-right: 222px;
+  padding-bottom: 105px;
+  background-color: #1946BA;
+  background-image: url("icons/get-price.svg");
+  background-repeat: no-repeat;
+  background-position: 123% -800%;
+  display: inline-block;
+}
+
+.get-price section h1{
+  margin: 0;
+  font-size: 72px;
+  line-height: 75px;
+  color: white;
+  margin-bottom: 45px;
+}
+
+.get-price section p{
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+}
+
+form input[type="text"],
+form input[type="email"]{
+  border: 1px solid #DEDEDE;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: #8C8C8C;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+#form-get-price{
+  display: inline-block;
+  padding-left: 125px;
+  width: 625px;
 }
