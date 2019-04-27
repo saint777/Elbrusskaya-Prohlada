@@ -486,6 +486,11 @@ form input[type="email"]{
   width: 100%;
 }
 
+form input[type="text"]:focus::placeholder,
+form input[type="email"]:focus::placeholder{
+  color: rgba(255, 255, 255, 0);
+}
+
 #form-get-price{
   display: inline-block;
   padding-left: 125px;
