@@ -32,6 +32,7 @@ h1{
   box-sizing: content-box;
   padding: 8px;
   margin-right: -8px;
+  margin-top: -8px;
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -46,6 +47,10 @@ h1{
 .main-nav input:checked + label{
   background-image: url("../icons/close-btn.svg");
   background-color: white;
+}
+
+.main-links .active a{
+  color: #8CA2DC;
 }
 
 .menu-wrapper{
