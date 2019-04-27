@@ -102,8 +102,12 @@ header{
   vertical-align: middle;
 }
 
-.mobile-menu-btn{
-  
+#mm-checkbox{
+  display: none;
+}
+
+#mm-checkbox + labe{
+  display: none;
 }
 
 .main-nav{

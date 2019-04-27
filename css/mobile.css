@@ -1,11 +1,108 @@
 @media only screen and (max-width: 320px){
-  .container{
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.container{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-  .logo{
-    font-size: 14px;
-  }
+.logo{
+  font-size: 14px;
+}
+
+/* Mobile Menu */
+
+.mobile-menu{
+  display: inline-block;
+}
+
+.main-nav input{
+  display: none;
+}
+
+.main-nav label:hover{
+  cursor: pointer;
+}
+
+.main-nav label{
+  box-sizing: content-box;
+  padding: 8px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  background-image: url(../icons/burger-menu.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+  z-index: 4;
+}
+
+.main-nav input:checked + label{
+  background-image: url("../icons/close-btn.svg");
+  background-color: white;
+}
+
+.menu-wrapper{
+  display: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-wrapper .contacts{
+  padding: 0;
+  margin-top: 30px;
+}
+
+.menu-wrapper .main-links{
+  padding: 0;
+}
+
+.menu-wrapper .main-links li{
+  display: block;
+  padding-bottom: 10px;
+}
+
+.menu-wrapper .contacts li{
+  padding-bottom: 20px;
+  display: block;
+}
+
+.menu-wrapper a:link,
+.menu-wrapper a{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #fff;
+}
+
+.menu-wrapper .contacts .link-btn{
+  color: #1946BA;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 30px rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  width: 100%;
+  display: inline-block;
+  line-height: normal;
+  text-align: center;
+}
+
+.main-nav input:checked ~ .menu-wrapper{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1946BA;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-us{
+  display: none;
+}
+
 }
