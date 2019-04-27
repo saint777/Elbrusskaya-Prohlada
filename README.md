@@ -1,4 +1,4 @@
-# Elbrusskaya-Prohlada
+# Elbrusskaya Prohlada
 
 1) First block - header, slider with timer
 2) Second block - about us, discount slider with timer, price request form
