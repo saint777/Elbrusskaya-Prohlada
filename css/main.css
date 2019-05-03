@@ -49,6 +49,7 @@ html{
 body{
   font-family: "Open Sans", sans-serif, serif;
   color: #2A2A2A;
+  font-size: 16px;
 }
 
 a,
@@ -93,7 +94,7 @@ header{
   flex-wrap: wrap;
   vertical-align: middle;
   align-items: center;
-  margin-lefT: auto;
+  margin-left: auto;
 }
 
 .logo{
